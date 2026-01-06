@@ -82,7 +82,7 @@ The agent is implemented as a pipeline:
 - Additional course platforms  
 - Personalization (user preferences & goals)  
 - Web dashboard (optional)  
-- Feedback loop (👍 / 👎)  
+- Feedback loop 
 - Queue-based processing (Celery / Redis)  
 - PostgreSQL for scale  
 
