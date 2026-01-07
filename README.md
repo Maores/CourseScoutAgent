@@ -1,4 +1,4 @@
-# CourseScoutAgent
+# CourseScoutAgent(Project In Progress)
 
 CourseScoutAgent is an automated background agent that discovers time-sensitive free courses, verifies that links and vouchers are still valid, filters for high-value software engineering topics, and sends Telegram / Email alerts so students don’t miss real opportunities.
 
