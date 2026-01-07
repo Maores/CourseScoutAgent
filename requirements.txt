@@ -1,0 +1,4 @@
+#praw
+feedparser
+requests
+python-dotenv
