@@ -25,6 +25,13 @@ def validate_udemy_urls(posts, user_agent):
             if 'udemy.com' in url.lower():
                 udemy_urls.add(url)
     
+    # Check for fallback URLs if no Udemy links found
+    if not udemy_urls:
+        fallback_urls = os.getenv('UDEMY_TEST_URLS', '').strip()
+        if fallback_urls:
+            print("No Udemy links found in collected posts. Validating fallback URLs...")
+            udemy_urls = set(url.strip() for url in fallback_urls.split(','))
+    
     # Count results by status
     valid_count = 0
     invalid_count = 0
